@@ -8,7 +8,7 @@ This application allows users to easily **add**, **search**, **sort**, and **del
 
 ## 📸 Screenshot
 ### 💻 Full View
-![Screenshot - Desktop View](.src/assets/expenseUI.png) 
+![alt text](src/assets/expenseUI.png)
 
 
 > _To add your screenshots:_
