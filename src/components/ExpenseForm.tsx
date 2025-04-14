@@ -52,7 +52,6 @@ const Expense = () => {
 
   return (
     <div className="space-y-4">
-      {/* 🔍 Search Input */}
       <input
         type="text"
         placeholder="Search by description..."
@@ -61,7 +60,6 @@ const Expense = () => {
         className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
       />
 
-      {/* ➕ Expense Form */}
       <form
         onSubmit={handleSubmit}
         className="space-y-4 bg-gray-100 p-4 rounded-lg"
@@ -131,7 +129,7 @@ const Expense = () => {
                 </p>
                 <button
                   onClick={() => handleDelete(expense.id)}
-                  className="text-red-500 hover:text-red-700 text-sm"
+                  className=" text-white hover:text-red-300 text-sm bg-red-600 px-2 py-1 rounded"
                 >
                   Delete
                 </button>
