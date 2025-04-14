@@ -1,58 +1,103 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 💸 Expense Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A clean, interactive, and beginner-friendly **Expense Tracker** built with **React**, **TypeScript**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+This application allows users to easily **add**, **search**, **sort**, and **delete** expense entries. It is ideal for anyone learning React or managing simple personal finances. With a responsive design and modern styling, it's built for both desktop and mobile users.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshot
+### 💻 Full View
+![Screenshot - Desktop View](.src/assets/expenseUI.png) 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+> _To add your screenshots:_
+> - Create a folder called `screenshots/` in the root.
+> - Save your screenshots as `desktop-view.png`, `mobile-view.png`, etc.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✨ Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-=======
-# Expense-tracker
->>>>>>> a03aebd6675880f9da2e3c18fdaa1814a52dabd2
+### ✅ Core Features
+
+- 📥 **Add New Expense**
+  - Enter amount (Ksh), description, and date.
+- 📝 **Expense List**
+  - Displays all added expenses in a clean card layout.
+- 🔍 **Live Search**
+  - Filter expenses as you type by description.
+- 📅 **Date Picker**
+  - Easily select the date of an expense.
+
+### 🌟 Advanced Features
+
+- 🔡 **Sort Alphabetically**
+  - Sort expenses by description (A–Z or Z–A).
+- ❌ **Delete Individual Expense**
+  - Remove any specific expense from the list.
+- 🧾 **Responsive UI**
+  - Fully responsive layout for desktop, tablet, and mobile.
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology     | Description                              |
+|----------------|------------------------------------------|
+| **React**      | Component-based UI library               |
+| **TypeScript** | Strongly-typed superset of JavaScript   |
+| **TailwindCSS**| Utility-first CSS framework              |
+| **React Icons**| Icon library for React                   |
+
+---
+
+## 📂 Project Structure
+
+
+---
+
+## ⚙️ Getting Started
+
+Follow these steps to run the project locally on your machine:
+
+### 🔁 Clone the Repo
+
+```bash
+git clone https://github.com/yourusername/expense-tracker.git
+cd expense-tracker
+
+
+## Install Dependencies
+   npm install
+
+Run the App Locally
+npm run dev
+Open in browser: http://localhost:5173
+
+🧪 Usage
+Enter your expense amount in Kenyan Shillings (e.g., 250).
+
+Add a short description (e.g., Lunch, Bus Fare, Grocery).
+
+Pick a date for the expense.
+
+Click Add to save the expense.
+
+Use the search bar to filter by description.
+
+Click the sort button to toggle alphabetical order.
+
+Press ❌ on a listed expense to delete it.
+
+
+🔮 Future Improvements
+💾 Persist expenses in LocalStorage
+
+📊 Add a Monthly Summary or Pie Chart
+
+🗂 Group expenses by category
+
+🔐 Add User Authentication
+
+☁️ Sync to Firebase/Backend API
